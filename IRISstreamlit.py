@@ -9,6 +9,7 @@ import pandas as pd
 import streamlit as st 
 from PIL import Image
 import joblib
+from transformers import pipeline
 
 modeloLR = joblib.load('IRISpipeline.sav')
 
