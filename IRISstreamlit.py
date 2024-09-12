@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st 
 from PIL import Image
+import joblib
 
 modeloLR = joblib.load('IRISpipeline.sav')
 
