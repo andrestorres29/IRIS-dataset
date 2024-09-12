@@ -7,7 +7,6 @@ Created on Wed Sep  4 22:40:07 2024
 import numpy as np
 import pandas as pd
 import streamlit as st 
-import joblib
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
