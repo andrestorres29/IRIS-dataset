@@ -7,10 +7,6 @@ Created on Wed Sep  4 22:40:07 2024
 import numpy as np
 import pandas as pd
 import streamlit as st 
-from sklearn.linear_model import LogisticRegression
-from sklearn.base import BaseEstimator, TransformerMixin
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.impute import SimpleImputer
 from PIL import Image
 
 modeloLR = joblib.load('IRISpipeline.sav')
