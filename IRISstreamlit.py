@@ -34,7 +34,7 @@ def main():
         data = {"Longitud del sépalo":float(sepal_length),"Ancho del sépalo":float(sepal_width),"Longitud del pétalo":float(petal_length),
                 "Ancho del pétalo ":float(petal_width)}
         df = pd.DataFrame([list(data.values())],columns=["Longitud del sépalo","Ancho del sépalo ","Longitud del pétalo","Ancho del pétalo"])
-        df_prepared = pipeline.transform(df)
+        df_prepared = Pipeline.transform(df)
         prediction = modeloLR.predict(df_prepared)
         output = float(prediction[0])
         st.success('Prediction is {}'.format(output))
